@@ -1,0 +1,70 @@
+:root {
+  --fresa-principal: #e63946;
+  --fresa-oscura: #b5172c;
+  --crema-fondo: #fff8f6;
+  --rosa-suave: #ffe5ec;
+  --texto-oscuro: #2b2d42;
+}
+
+body {
+  background-color: var(--crema-fondo);
+  color: var(--texto-oscuro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-fresa {
+  background: linear-gradient(135deg, var(--fresa-principal), var(--fresa-oscura));
+}
+
+.hero-banner {
+  background-color: var(--rosa-suave);
+  border-bottom: 2px solid #ffc2d1;
+}
+
+.btn-fresa {
+  background-color: var(--fresa-principal);
+  color: #fff;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-fresa:hover:not(:disabled) {
+  background-color: var(--fresa-oscura);
+  color: #fff;
+}
+
+.btn-fresa:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.card-producto {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+}
+
+.card-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(230, 57, 70, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.badge-categoria {
+  background-color: var(--rosa-suave);
+  color: var(--fresa-oscura);
+  font-weight: 600;
+}
+
+.login-box {
+  max-width: 420px;
+  margin: 80px auto;
+  border-radius: 16px;
+  border-top: 5px solid var(--fresa-principal);
+}
